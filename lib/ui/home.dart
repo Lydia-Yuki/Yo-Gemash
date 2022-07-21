@@ -1,6 +1,4 @@
-import '../main.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 import '../nav_bar.dart';
@@ -9,6 +7,7 @@ class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key? key, required String title}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageWidgetState createState() => _HomePageWidgetState();
 }
 
@@ -27,11 +26,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           'Home',
           style: (Theme.of(context).textTheme.headline2),
         ),
-        actions: [],
+        actions: const [],
         centerTitle: false,
         elevation: 2,
       ),
-      backgroundColor: Colors.white54,
+      backgroundColor: Colors.white,
       drawer: Drawer(
         elevation: 16,
         child: InkWell(
@@ -39,14 +38,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => NavBarPage(initialPage: 'HomePage', title: 'Home'),
+                builder: (context) => const NavBarPage(initialPage: 'HomePage', title: 'Home'),
               ),
             );
           },
           child: ListView(
             padding: EdgeInsets.zero,
             scrollDirection: Axis.vertical,
-            children: [],
+            children: const [],
           ),
         ),
       ),
@@ -57,16 +56,16 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Align(
-                alignment: AlignmentDirectional(0, 0),
+                alignment: const AlignmentDirectional(0, 0),
                 child: Container(
                   width: 120,
                   height: 120,
                   clipBehavior: Clip.antiAlias,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                   ),
                   child: Image.asset(
-                    'assets/images/Picture1[1].png',
+                    'assets/images/logo.png',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -77,38 +76,38 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 style: Theme.of(context).textTheme.headline1,
               ),
               Expanded(
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 500,
                   child: Stack(
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 50),
+                        padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 50),
                         child: PageView(
                           controller: pageViewController ??=
                               PageController(initialPage: 0),
                           scrollDirection: Axis.horizontal,
                           children: [
                             Image.asset(
-                              'assets/images/WIP_6_2.jpg',
+                              'assets/images/imagine.jpeg',
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
                             ),
                             Image.asset(
-                              'assets/images/WhatsApp_Image_2022-07-15_at_9.28.23_AM.jpeg',
+                              'assets/images/pic(4).jpeg',
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
                             ),
                             Image.asset(
-                              'assets/images/register.jpg',
+                              'assets/images/reg.jpeg',
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
                             ),
                             Image.asset(
-                              'assets/images/WhatsApp_Image_2022-07-19_at_8.59.46_AM.jpeg',
+                              'assets/images/pic(5).jpeg',
                               width: 100,
                               height: 100,
                               fit: BoxFit.cover,
@@ -117,9 +116,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0, 1),
+                        alignment: const AlignmentDirectional(0, 1),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
                           child: SmoothPageIndicator(
                             controller: pageViewController ??=
                                 PageController(initialPage: 0),
@@ -128,7 +127,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                             onDotClicked: (i) {
                               pageViewController!.animateToPage(
                                 i,
-                                duration: Duration(milliseconds: 500),
+                                duration: const Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                             },
