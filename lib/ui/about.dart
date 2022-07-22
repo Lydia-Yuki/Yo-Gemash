@@ -22,11 +22,59 @@ class _AboutState extends State<About> {
         centerTitle: false,
         elevation: 2,
       ),
-      body: SafeArea(child: Column(
-
-
-      )),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Container(
+              padding: EdgeInsets.all(10),
+              child: Column(children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only(left: 8, bottom: 4),
+                  alignment: Alignment.bottomLeft,
+                  child: Text(
+                    "App Info",
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w500,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+                Card(
+                    child: Container(
+                  child: Container(
+                      alignment: Alignment.topLeft,
+                      padding: EdgeInsets.all(15),
+                      child: Column(
+                        children: <Widget>[
+                          Column(children: <Widget>[
+                            ...ListTile.divideTiles(color: Colors.grey, tiles: [
+                              ListTile(
+                                leading: Icon(Icons.info),
+                                title: Text('App Name'),
+                                subtitle: Text('Yo-Gemash'),
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.phone_android),
+                                title: Text('Version'),
+                                subtitle: Text('1.0.0'),
+                              ),
+                              ListTile(
+                                leading: Icon(Icons.info),
+                                title: Text('Github'),
+                                subtitle: Text('https://github.com/Lydia-Yuki/Yo-Gemash'),
+                              )
+                            ])
+                          ])
+                        ],
+                      )),
+                )),
+              ]),
+            ),
+          ],
+        ),
+      ),
     );
-    
   }
 }
