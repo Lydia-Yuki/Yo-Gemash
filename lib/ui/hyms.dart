@@ -3,9 +3,12 @@ import 'package:yo_gemash/songs/chinjikanoNdirero.dart';
 import 'package:yo_gemash/songs/chinyararaMoyoWangu.dart';
 import 'package:yo_gemash/songs/downTheValley.dart';
 import 'package:yo_gemash/songs/everydayWithJesus.dart';
+import 'package:yo_gemash/songs/igamaLeNkosi.dart';
 import 'package:yo_gemash/songs/jehovhaUnaMasimba.dart';
+import 'package:yo_gemash/songs/keTshepileWena.dart';
 import 'package:yo_gemash/songs/ngatimukudzeiMwari.dart';
 import 'package:yo_gemash/songs/obayetheNkosiYami.dart';
+import 'package:yo_gemash/songs/panenzvimboYakanaka.dart';
 import 'package:yo_gemash/songs/uthandoLukababa.dart';
 import 'package:yo_gemash/songs/uyaMweyaMutsvene.dart';
 
@@ -464,6 +467,46 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Ngatimukudzei Mwari',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const PaneNzvimboYakanaka(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Pane Nzvimbo Yakanaka',
                                                 style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
@@ -1107,14 +1150,13 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 0),
+                                      16, 12, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
                                       await Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) =>
-                                              const AfricaBackToGodWidget(),
+                                          builder: (context) => const KeTshepileWena(),
                                         ),
                                       );
                                     },
@@ -1136,7 +1178,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
-                                                'Limited Edition',
+                                                'Ke Tshepile Wena',
                                                 style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
@@ -1147,31 +1189,39 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 44),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white54,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 12, 8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                16, 0, 0, 0),
-                                            child: Text(
-                                              'Shoes',
-                                              style:Theme.of(context).textTheme.subtitle1,
+                                      16, 12, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const IgamaleNkosi(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Igama leNkosi',
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
