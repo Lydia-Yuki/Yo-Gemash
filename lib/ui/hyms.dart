@@ -17,6 +17,7 @@ class HymnsWidget extends StatefulWidget {
   const HymnsWidget({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _HymnsWidgetState createState() => _HymnsWidgetState();
 }
 
@@ -56,7 +57,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
               children: [
                 Expanded(
                   child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(16, 12, 8, 0),
+                    padding: const EdgeInsetsDirectional.fromSTEB(16, 12, 8, 0),
                     child: TextFormField(
                       controller: searchBarController,
                       obscureText: false,
@@ -81,7 +82,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                         filled: true,
                         fillColor: Colors.blueAccent[700],
                         contentPadding:
-                        EdgeInsetsDirectional.fromSTEB(24, 24, 20, 24),
+                        const EdgeInsetsDirectional.fromSTEB(24, 24, 20, 24),
                         prefixIcon: const Icon(
                           Icons.search,
                           color: Colors.white24,
@@ -93,10 +94,10 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0, 12, 12, 0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0, 12, 12, 0),
                   child: IconButton(
                     iconSize: 50,
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.search_sharp,
                       color: Colors.black,
                       size: 30,
@@ -116,7 +117,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                   children: [
                     TabBar(
                       labelColor: Colors.blueAccent[700],
-                      unselectedLabelColor:Colors.white24,
+                      unselectedLabelColor:Colors.black,
                       labelStyle: Theme.of(context).textTheme.subtitle1,
                       indicatorColor: Colors.blueAccent[700],
                       tabs: const [
@@ -140,7 +141,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 12, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -148,7 +149,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              AgerePachigaroWidget(),
+                                              const AgerePachigaroWidget(),
                                         ),
                                       );
                                     },
@@ -159,7 +160,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -167,7 +168,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Agere Pachigaro',
@@ -180,14 +181,14 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
                                       await Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => ApoJesuWidget(),
+                                          builder: (context) => const ApoJesuWidget(),
                                         ),
                                       );
                                     },
@@ -198,7 +199,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -206,7 +207,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Apo Jesu Anouya',
@@ -219,7 +220,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -227,7 +228,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              ApoToropitoWidget(),
+                                              const ApoToropitoWidget(),
                                         ),
                                       );
                                     },
@@ -238,7 +239,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -246,7 +247,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Apo Toropito Yake Mwari',
@@ -259,7 +260,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {},
@@ -270,7 +271,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -278,7 +279,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Alpha na Omega',
@@ -291,7 +292,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: Container(
                                     width: double.infinity,
@@ -300,7 +301,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -309,7 +310,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Casual Tees',
@@ -321,7 +322,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 44),
                                   child: Container(
                                     width: double.infinity,
@@ -330,7 +331,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -339,7 +340,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shoes',
@@ -359,7 +360,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -367,7 +368,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              AfricaBackToGodWidget(),
+                                              const AfricaBackToGodWidget(),
                                         ),
                                       );
                                     },
@@ -378,7 +379,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16, 8, 16, 0),
                                         child: InkWell(
                                           onTap: () async {
@@ -386,7 +387,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                               context,
                                               MaterialPageRoute(
                                                 builder: (context) =>
-                                                    AfricaBackToGodWidget(),
+                                                    const AfricaBackToGodWidget(),
                                               ),
                                             );
                                           },
@@ -398,7 +399,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                               BorderRadius.circular(12),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(8, 8, 12, 8),
                                               child: Row(
                                                 mainAxisSize: MainAxisSize.max,
@@ -407,7 +408,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                         16, 0, 0, 0),
                                                     child: Text(
@@ -424,7 +425,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 12, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -432,7 +433,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              AgnusDeiWidget(),
+                                              const AgnusDeiWidget(),
                                         ),
                                       );
                                     },
@@ -443,7 +444,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -451,7 +452,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Agnus Dei',
@@ -464,7 +465,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -472,7 +473,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              AliveForevermoreWidget(),
+                                              const AliveForevermoreWidget(),
                                         ),
                                       );
                                     },
@@ -483,7 +484,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -491,7 +492,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Alive Forevermore',
@@ -504,7 +505,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -512,7 +513,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              AlphaandOmegaWidget(),
+                                              const AlphaandOmegaWidget(),
                                         ),
                                       );
                                     },
@@ -523,7 +524,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -531,7 +532,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Alpha and Omega',
@@ -544,7 +545,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -552,7 +553,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              BlessedGoingInWidget(),
+                                              const BlessedGoingInWidget(),
                                         ),
                                       );
                                     },
@@ -563,7 +564,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -571,7 +572,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Blessed Going In',
@@ -584,7 +585,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -592,7 +593,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              BlessingsAndHonourWidget(),
+                                              const BlessingsAndHonourWidget(),
                                         ),
                                       );
                                     },
@@ -603,7 +604,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -611,7 +612,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Blessings and Honour',
@@ -624,7 +625,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -632,7 +633,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              BlessTheLordWidget(),
+                                              const BlessTheLordWidget(),
                                         ),
                                       );
                                     },
@@ -643,7 +644,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -651,7 +652,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Bless The Lord',
@@ -664,14 +665,14 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 44),
                                   child: InkWell(
                                     onTap: () async {
                                       await Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => BowDownWidget(),
+                                          builder: (context) => const BowDownWidget(),
                                         ),
                                       );
                                     },
@@ -682,7 +683,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -690,7 +691,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Bow Down',
@@ -711,14 +712,14 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 12, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
                                       await Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (context) => AliwamoWidget(),
+                                          builder: (context) => const AliwamoWidget(),
                                         ),
                                       );
                                     },
@@ -729,7 +730,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -737,7 +738,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Aliwamo',
@@ -750,7 +751,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: Container(
                                     width: double.infinity,
@@ -759,7 +760,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -768,7 +769,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Pants',
@@ -780,7 +781,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: Container(
                                     width: double.infinity,
@@ -789,7 +790,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -798,7 +799,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shorts Sporty',
@@ -810,7 +811,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: Container(
                                     width: double.infinity,
@@ -819,7 +820,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -828,7 +829,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shorts Casual',
@@ -840,7 +841,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: Container(
                                     width: double.infinity,
@@ -849,7 +850,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -858,7 +859,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Casual Tees',
@@ -870,7 +871,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 0),
                                   child: InkWell(
                                     onTap: () async {
@@ -878,7 +879,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              AfricaBackToGodWidget(),
+                                              const AfricaBackToGodWidget(),
                                         ),
                                       );
                                     },
@@ -889,7 +890,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             8, 8, 12, 8),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -897,7 +898,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                           CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Limited Edition',
@@ -910,7 +911,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16, 8, 16, 44),
                                   child: Container(
                                     width: double.infinity,
@@ -919,7 +920,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8, 8, 12, 8),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -928,7 +929,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         children: [
                                           Padding(
                                             padding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shoes',
