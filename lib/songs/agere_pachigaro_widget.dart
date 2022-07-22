@@ -2,14 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 
-class AgerePachigaro extends StatefulWidget {
-  const AgerePachigaro({Key? key}) : super(key: key);
+class AgerePachigaroWidget extends StatefulWidget {
+  const AgerePachigaroWidget({Key? key}) : super(key: key);
 
   @override
-  State<AgerePachigaro> createState() => _AgerePachigaroState();
+  _AgerePachigaroWidgetState createState() => _AgerePachigaroWidgetState();
 }
 
-class _AgerePachigaroState extends State<AgerePachigaro> {
+class _AgerePachigaroWidgetState extends State<AgerePachigaroWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

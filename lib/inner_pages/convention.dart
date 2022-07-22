@@ -1,9 +1,8 @@
-import '../flutter_flow/flutter_flow_icon_button.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 import '../main.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../nav_bar.dart';
 
 class ConventionWidget extends StatefulWidget {
   const ConventionWidget({Key? key}) : super(key: key);
@@ -20,13 +19,9 @@ class _ConventionWidgetState extends State<ConventionWidget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         automaticallyImplyLeading: false,
-        leading: FlutterFlowIconButton(
-          borderColor: Colors.transparent,
-          borderRadius: 30,
-          borderWidth: 1,
-          buttonSize: 60,
+        leading: IconButton(
           icon: Icon(
             Icons.arrow_back_rounded,
             color: Colors.white,
@@ -36,24 +31,20 @@ class _ConventionWidgetState extends State<ConventionWidget> {
             await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => NavBarPage(initialPage: 'Events'),
+                builder: (context) => NavBarPage(initialPage: 'Events', title: 'Events'),
               ),
             );
           },
         ),
         title: Text(
           'NYC',
-          style: FlutterFlowTheme.of(context).title2.override(
-            fontFamily: 'Poppins',
-            color: Colors.white,
-            fontSize: 22,
-          ),
+          style: Theme.of(context).textTheme.headline2,
         ),
         actions: [],
         centerTitle: false,
         elevation: 2,
       ),
-      backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Column(
           mainAxisSize: MainAxisSize.max,
@@ -77,7 +68,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                   Expanded(
                     child: Text(
                       'National Youth Convention',
-                      style: FlutterFlowTheme.of(context).title2,
+                      style: Theme.of(context).textTheme.headline3,
                     ),
                   ),
                 ],
@@ -91,10 +82,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                   Expanded(
                     child: Text(
                       '6 - 8 August 2022',
-                      style: FlutterFlowTheme.of(context).subtitle1.override(
-                        fontFamily: 'Poppins',
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
+                      style: Theme.of(context).textTheme.subtitle2,
                     ),
                   ),
                 ],
@@ -108,7 +96,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                   Expanded(
                     child: Text(
                       'VENUE:\nKwekwe Polytechnic College\nKwekwe',
-                      style: FlutterFlowTheme.of(context).bodyText2,
+                      style: Theme.of(context).textTheme.bodyText2,
                     ),
                   ),
                 ],
@@ -122,10 +110,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                   Expanded(
                     child: Text(
                       'Registration:\nBefore 25 July - \$6\nAfter 25 July - \$10',
-                      style: FlutterFlowTheme.of(context).bodyText1.override(
-                        fontFamily: 'Poppins',
-                        color: FlutterFlowTheme.of(context).primaryColor,
-                      ),
+                      style: Theme.of(context).textTheme.headline4,
                     ),
                   ),
                 ],
@@ -150,15 +135,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                                 child: Text(
                                   '+263 77 280 3136',
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText2
-                                      .override(
-                                    fontFamily: 'Lexend Deca',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal,
-                                  ),
+                                  style: Theme.of(context).textTheme.headline5,
                                 ),
                               ),
                             ),
@@ -181,15 +158,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                                 child: Text(
                                   '+263 77 987 0399',
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText2
-                                      .override(
-                                    fontFamily: 'Lexend Deca',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal,
-                                  ),
+                                  style: Theme.of(context).textTheme.headline5,
                                 ),
                               ),
                             ),
@@ -212,15 +181,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
                                 child: Text(
                                   '+263 77 262 2884',
                                   textAlign: TextAlign.center,
-                                  style: FlutterFlowTheme.of(context)
-                                      .bodyText2
-                                      .override(
-                                    fontFamily: 'Lexend Deca',
-                                    color: FlutterFlowTheme.of(context)
-                                        .secondaryText,
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.normal,
-                                  ),
+                                  style: Theme.of(context).textTheme.headline5,
                                 ),
                               ),
                             ),

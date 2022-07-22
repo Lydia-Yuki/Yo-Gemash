@@ -2,14 +2,15 @@
 
 import 'package:flutter/material.dart';
 
-class ApoJesuAnouya extends StatefulWidget {
-  const ApoJesuAnouya({Key? key}) : super(key: key);
+class ApoJesuWidget extends StatefulWidget {
+  const ApoJesuWidget({Key? key}) : super(key: key);
 
   @override
-  State<ApoJesuAnouya> createState() => _ApoJesuAnouyaState();
+  _ApoJesuWidgetState createState() => _ApoJesuWidgetState();
 }
 
-class _ApoJesuAnouyaState extends State<ApoJesuAnouya> {
+class _ApoJesuWidgetState extends State<ApoJesuWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

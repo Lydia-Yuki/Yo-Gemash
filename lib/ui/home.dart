@@ -71,7 +71,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                 ),
               ),
               Text(
-                'Welcome to\nConnectAOG',
+                'Welcome to\nYo-Gemash',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.headline1,
               ),

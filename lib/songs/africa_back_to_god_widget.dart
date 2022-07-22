@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class AfricaBackToGod extends StatefulWidget {
-  const AfricaBackToGod({Key? key}) : super(key: key);
+class AfricaBackToGodWidget extends StatefulWidget {
+  const AfricaBackToGodWidget({Key? key}) : super(key: key);
 
   @override
-  State<AfricaBackToGod> createState() => _AfricaBackToGodState();
+  _AfricaBackToGodWidgetState createState() => _AfricaBackToGodWidgetState();
 }
 
-class _AfricaBackToGodState extends State<AfricaBackToGod> {
+class _AfricaBackToGodWidgetState extends State<AfricaBackToGodWidget> {
+  final scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

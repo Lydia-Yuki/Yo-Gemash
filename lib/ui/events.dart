@@ -1,7 +1,5 @@
-import '../convention/convention_widget.dart';
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
-import '../gemcon/gemcon_widget.dart';
+import '../inner_pages/convention.dart';
+import '../inner_pages/gemcon.dart';
 import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -28,20 +26,17 @@ class _EventsWidgetState extends State<EventsWidget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         automaticallyImplyLeading: false,
         title: Text(
           'GEM Events',
-          style: FlutterFlowTheme.of(context).title2.override(
-            fontFamily: 'Poppins',
-            color: Colors.white,
-          ),
+          style: Theme.of(context).textTheme.headline2,
         ),
         actions: [],
         centerTitle: false,
         elevation: 0,
       ),
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Colors.white,
       body: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
         child: SingleChildScrollView(
@@ -53,7 +48,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                 width: double.infinity,
                 height: 70,
                 decoration: BoxDecoration(
-                  color: FlutterFlowTheme.of(context).primaryColor,
+                  color: Theme.of(context).colorScheme.primary,
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 5,
@@ -74,7 +69,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                     obscureText: false,
                     decoration: InputDecoration(
                       labelText: 'Search events...',
-                      labelStyle: FlutterFlowTheme.of(context).bodyText2,
+                      labelStyle: Theme.of(context).textTheme.bodyText2,
                       enabledBorder: OutlineInputBorder(
                         borderSide: BorderSide(
                           color: Color(0x00000000),
@@ -90,14 +85,13 @@ class _EventsWidgetState extends State<EventsWidget> {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       filled: true,
-                      fillColor:
-                      FlutterFlowTheme.of(context).secondaryBackground,
+                      fillColor:Colors.white54,
                       prefixIcon: Icon(
                         Icons.search_rounded,
-                        color: FlutterFlowTheme.of(context).secondaryText,
+                        color: Colors.grey[800],
                       ),
                     ),
-                    style: FlutterFlowTheme.of(context).bodyText1,
+                    style: Theme.of(context).textTheme.bodyText1,
                   ),
                 ),
               ),
@@ -109,7 +103,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                   children: [
                     Text(
                       'See All',
-                      style: FlutterFlowTheme.of(context).bodyText1,
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   ],
                 ),
@@ -139,8 +133,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                         width: MediaQuery.of(context).size.width * 0.45,
                         height: 190,
                         decoration: BoxDecoration(
-                          color:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                          color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 4,
@@ -171,7 +164,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                 EdgeInsetsDirectional.fromSTEB(8, 12, 0, 0),
                                 child: Text(
                                   'GEMCon',
-                                  style: FlutterFlowTheme.of(context).subtitle1,
+                                  style: Theme.of(context).textTheme.subtitle1,
                                 ),
                               ),
                               Padding(
@@ -179,7 +172,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                 EdgeInsetsDirectional.fromSTEB(8, 4, 0, 0),
                                 child: Text(
                                   'Mini Convention',
-                                  style: FlutterFlowTheme.of(context).bodyText2,
+                                  style: Theme.of(context).textTheme.bodyText2,
                                 ),
                               ),
                             ],
@@ -200,8 +193,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                         width: MediaQuery.of(context).size.width * 0.45,
                         height: 190,
                         decoration: BoxDecoration(
-                          color:
-                          FlutterFlowTheme.of(context).secondaryBackground,
+                          color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 4,
@@ -232,7 +224,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                 EdgeInsetsDirectional.fromSTEB(8, 12, 0, 0),
                                 child: Text(
                                   'NYC',
-                                  style: FlutterFlowTheme.of(context).subtitle1,
+                                  style: Theme.of(context).textTheme.subtitle1,
                                 ),
                               ),
                               Padding(
@@ -240,7 +232,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                                 EdgeInsetsDirectional.fromSTEB(8, 4, 0, 0),
                                 child: Text(
                                   'National Convention',
-                                  style: FlutterFlowTheme.of(context).bodyText2,
+                                  style: Theme.of(context).textTheme.bodyText2,
                                 ),
                               ),
                             ],

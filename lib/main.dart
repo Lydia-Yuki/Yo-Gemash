@@ -19,10 +19,14 @@ class MyApp extends StatelessWidget {
         ),
         textTheme: const TextTheme(
           headline2: TextStyle(fontFamily: 'Poppins', fontSize: 22.0, color: Colors.white, fontWeight: FontWeight.bold),
+            headline3: TextStyle(fontFamily: 'Poppins', fontSize: 22.0,fontWeight: FontWeight.bold),
           headline1: TextStyle(fontSize: 24.0, fontFamily: 'Poppins', color: Colors.white38, fontWeight: FontWeight.bold),
           bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Poppins', color: Colors.white38, fontWeight: FontWeight.bold ),
           bodyText1: TextStyle(fontSize: 14.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold),
-          subtitle1: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold)
+          headline4: TextStyle(fontSize: 14.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.indigoAccent),
+          headline5: TextStyle(fontSize: 14.0, fontFamily: 'Lexend Deca', fontWeight: FontWeight.normal),
+          subtitle1: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold),
+          subtitle2: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.indigoAccent)
         ),
       ),
       home: HomePageWidget(title: 'Yo-Gemash'),

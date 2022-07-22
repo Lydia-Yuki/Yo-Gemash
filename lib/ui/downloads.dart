@@ -1,5 +1,3 @@
-import '../flutter_flow/flutter_flow_theme.dart';
-import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,21 +16,17 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        backgroundColor: FlutterFlowTheme.of(context).primaryColor,
+        backgroundColor: Theme.of(context).colorScheme.primary,
         automaticallyImplyLeading: false,
         title: Text(
           'Downloads',
-          style: FlutterFlowTheme.of(context).title2.override(
-            fontFamily: 'Poppins',
-            color: Colors.white,
-            fontSize: 22,
-          ),
+          style: Theme.of(context).textTheme.headline2,
         ),
         actions: [],
         centerTitle: false,
         elevation: 2,
       ),
-      backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+      backgroundColor: Colors.white54,
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),
@@ -57,7 +51,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
                           child: Text(
                             'AOG Constitution - Youth Ver.',
-                            style: FlutterFlowTheme.of(context).subtitle1,
+                            style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ),
                       ],
@@ -83,7 +77,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
                           child: Text(
                             'AOG Constitution - Full Ver.',
-                            style: FlutterFlowTheme.of(context).subtitle1,
+                            style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ),
                       ],
@@ -109,7 +103,7 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
                           padding: EdgeInsetsDirectional.fromSTEB(16, 0, 0, 0),
                           child: Text(
                             'AOG Constitution - Girls Ver.',
-                            style: FlutterFlowTheme.of(context).subtitle1,
+                            style: Theme.of(context).textTheme.subtitle1,
                           ),
                         ),
                       ],

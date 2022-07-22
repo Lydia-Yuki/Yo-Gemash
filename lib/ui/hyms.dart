@@ -171,10 +171,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Agere Pachigaro',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style: Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -213,10 +210,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Apo Jesu Anouya',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -256,10 +250,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Apo Toropito Yake Mwari',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -291,10 +282,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Alpha na Omega',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -325,10 +313,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Casual Tees',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
-                                            ),
+                                              style:Theme.of(context).textTheme.subtitle1,),
                                           ),
                                         ],
                                       ),
@@ -358,10 +343,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shoes',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
-                                            ),
+                                              style:Theme.of(context).textTheme.subtitle1,),
                                           ),
                                         ],
                                       ),
@@ -430,11 +412,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                         16, 0, 0, 0),
                                                     child: Text(
                                                       'Africa Back To God',
-                                                      style:
-                                                      FlutterFlowTheme.of(
-                                                          context)
-                                                          .subtitle1,
-                                                    ),
+                                                      style:Theme.of(context).textTheme.subtitle1,),
                                                   ),
                                                 ],
                                               ),
@@ -477,10 +455,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Agnus Dei',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -504,8 +479,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -521,10 +495,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Alive Forevermore',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -548,8 +519,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -565,10 +535,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Alpha and Omega',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -592,8 +559,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -609,10 +575,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Blessed Going In',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -636,8 +599,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -653,10 +615,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Blessings and Honour',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -680,8 +639,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -697,10 +655,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Bless The Lord',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -723,8 +678,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -740,10 +694,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Bow Down',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -774,8 +725,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -791,10 +741,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Aliwamo',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -808,8 +755,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
+                                      color: Colors.white54,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
@@ -826,10 +772,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Pants',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
-                                            ),
+                                              style:Theme.of(context).textTheme.subtitle1,),
                                           ),
                                         ],
                                       ),
@@ -842,8 +785,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
+                                      color: Colors.white54,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
@@ -860,10 +802,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shorts Sporty',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
-                                            ),
+                                              style:Theme.of(context).textTheme.subtitle1,),
                                           ),
                                         ],
                                       ),
@@ -876,8 +815,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
+                                      color: Colors.white54,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
@@ -894,10 +832,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shorts Casual',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
-                                            ),
+                                              style:Theme.of(context).textTheme.subtitle1,),
                                           ),
                                         ],
                                       ),
@@ -910,8 +845,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
+                                      color: Colors.white54,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
@@ -928,10 +862,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Casual Tees',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
-                                            ),
+                                              style:Theme.of(context).textTheme.subtitle1,),
                                           ),
                                         ],
                                       ),
@@ -954,8 +885,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: FlutterFlowTheme.of(context)
-                                            .primaryBackground,
+                                        color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
                                       child: Padding(
@@ -971,10 +901,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Limited Edition',
-                                                style:
-                                                FlutterFlowTheme.of(context)
-                                                    .subtitle1,
-                                              ),
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
                                         ),
@@ -988,8 +915,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                   child: Container(
                                     width: double.infinity,
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryBackground,
+                                      color: Colors.white54,
                                       borderRadius: BorderRadius.circular(12),
                                     ),
                                     child: Padding(
@@ -1006,9 +932,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                 16, 0, 0, 0),
                                             child: Text(
                                               'Shoes',
-                                              style:
-                                              FlutterFlowTheme.of(context)
-                                                  .subtitle1,
+                                              style:Theme.of(context).textTheme.subtitle1,
                                             ),
                                           ),
                                         ],
