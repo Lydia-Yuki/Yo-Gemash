@@ -30,7 +30,7 @@ class _AgerePachigaroWidgetState extends State<AgerePachigaroWidget> {
             child: Text(
               'Verse 1\nAgere pachigaro\nAgere pachigaro\nJesu mutsvene\nIshe wemadzishe',
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline2,
+              style: Theme.of(context).textTheme.headline3,
             ),
           ),
         ],

@@ -33,8 +33,8 @@ class MyApp extends StatelessWidget {
           subtitle2: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.indigoAccent)
         ),
       ),
-      home: const HymnsWidget(),
-      //home: const HomePageWidget(title: 'Yo-Gemash'),
+      //home: const HymnsWidget(),
+      home: const HomePageWidget(title: 'Yo-Gemash'),
     );
   }
 }

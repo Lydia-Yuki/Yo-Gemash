@@ -34,14 +34,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       drawer: Drawer(
         elevation: 16,
         child: InkWell(
-          onTap: () async {
-            await Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => const NavBarPage(initialPage: 'HomePage', title: 'Home'),
-              ),
-            );
-          },
+          onTap: () {
+            Navigator.push(context,
+                MaterialPageRoute(builder: (context) => NavBarPage(initialPage:'HomePage', title: 'Home'))
+            );},
           child: ListView(
             padding: EdgeInsets.zero,
             scrollDirection: Axis.vertical,
@@ -73,7 +69,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Text(
                 'Welcome to\nYo-Gemash',
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.headline3,
               ),
               Expanded(
                 child: SizedBox(

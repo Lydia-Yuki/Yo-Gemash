@@ -1,5 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:yo_gemash/ui/downloads.dart';
+import 'package:yo_gemash/ui/events.dart';
+import 'package:yo_gemash/ui/home.dart';
+import 'package:yo_gemash/ui/hyms.dart';
 
 class NavBarPage extends StatefulWidget {
   const NavBarPage({Key? key, required String initialPage, required this.title}) : super(key: key);
@@ -15,16 +19,10 @@ class _NavBarState extends State<NavBarPage> {
   int _selectedIndex = 0;
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    Text('Home',
-        style: optionStyle),
-    Text('Hymn Book',
-        style: optionStyle),
-    Text('Database',
-        style: optionStyle),
-    Text('Events',
-        style: optionStyle),
-    Text('Downloads',
-        style: optionStyle)
+    HomePageWidget(title: "Home"),
+    HymnsWidget(),
+    EventsWidget(),
+    DownloadsWidget()
   ];
 
   void _onItemTapped(int index){
@@ -47,20 +45,13 @@ class _NavBarState extends State<NavBarPage> {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: "Home"),
+              icon: Icon(Icons.home)),
           BottomNavigationBarItem(
-              icon: Icon(Icons.book),
-              label: "Hymn Book"),
+              icon: Icon(Icons.book)),
           BottomNavigationBarItem(
-              icon: Icon(Icons.info),
-              label: "Database"),
+              icon: Icon(Icons.calendar_today)),
           BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_today),
-              label: "Events"),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.bar_chart),
-              label: "Downloads")
+              icon: Icon(Icons.download_for_offline_outlined))
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blueAccent[700],
