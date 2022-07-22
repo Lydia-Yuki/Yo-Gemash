@@ -2,8 +2,11 @@ import 'package:yo_gemash/songs/breakEveryChain.dart';
 import 'package:yo_gemash/songs/chinjikanoNdirero.dart';
 import 'package:yo_gemash/songs/chinyararaMoyoWangu.dart';
 import 'package:yo_gemash/songs/downTheValley.dart';
+import 'package:yo_gemash/songs/everydayWithJesus.dart';
 import 'package:yo_gemash/songs/jehovhaUnaMasimba.dart';
 import 'package:yo_gemash/songs/ngatimukudzeiMwari.dart';
+import 'package:yo_gemash/songs/obayetheNkosiYami.dart';
+import 'package:yo_gemash/songs/uthandoLukababa.dart';
 import 'package:yo_gemash/songs/uyaMweyaMutsvene.dart';
 
 import '../songs/africa_back_to_god_widget.dart';
@@ -20,6 +23,8 @@ import '../songs/blessings_and_honour_widget.dart';
 import '../songs/bow_down_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../songs/thathakonjengiloJesuWidget.dart';
 
 class HymnsWidget extends StatefulWidget {
   const HymnsWidget({Key? key}) : super(key: key);
@@ -897,6 +902,45 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     ),
                                   ),
                                 ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const EverydayWithJesus(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Everyday With Jesus',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -946,120 +990,117 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white54,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 12, 8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                16, 0, 0, 0),
-                                            child: Text(
-                                              'Pants',
-                                              style:Theme.of(context).textTheme.subtitle1,),
-                                          ),
-                                        ],
+                                      16, 12, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const UthandoLukababa(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Uthando Lukababa',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white54,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 12, 8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                16, 0, 0, 0),
-                                            child: Text(
-                                              'Shorts Sporty',
-                                              style:Theme.of(context).textTheme.subtitle1,),
-                                          ),
-                                        ],
+                                      16, 12, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const ObayetheNkosiYami(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Obayethe Nkosi Yami',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
                                 ),
                                 Padding(
                                   padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white54,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 12, 8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                16, 0, 0, 0),
-                                            child: Text(
-                                              'Shorts Casual',
-                                              style:Theme.of(context).textTheme.subtitle1,),
-                                          ),
-                                        ],
+                                      16, 12, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const ThathakonjengiloJesu(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
                                       ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsetsDirectional.fromSTEB(
-                                      16, 8, 16, 0),
-                                  child: Container(
-                                    width: double.infinity,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white54,
-                                      borderRadius: BorderRadius.circular(12),
-                                    ),
-                                    child: Padding(
-                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                          8, 8, 12, 8),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                        children: [
-                                          Padding(
-                                            padding:
-                                            const EdgeInsetsDirectional.fromSTEB(
-                                                16, 0, 0, 0),
-                                            child: Text(
-                                              'Casual Tees',
-                                              style:Theme.of(context).textTheme.subtitle1,),
-                                          ),
-                                        ],
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Thathakonjengilo Jesu',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
