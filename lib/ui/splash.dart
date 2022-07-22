@@ -1,5 +1,6 @@
 import 'package:easy_splash_screen/easy_splash_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:yo_gemash/ui/home.dart';
 import 'package:yo_gemash/ui/hyms.dart';
 
 class SplashPage extends StatefulWidget {
@@ -25,7 +26,7 @@ class _SplashPageState extends State<SplashPage> {
       backgroundColor: Colors.white,
       showLoader: true,
       loadingText: const Text("Loading..."),
-      navigator: const HymnsWidget(),
+      navigator: const HomePageWidget(title: 'Home'),
       durationInSeconds: 5,
     );
   }
