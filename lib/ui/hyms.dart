@@ -399,7 +399,7 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
-                                                'Pane Nzvimbo Yakanaka',
+                                                'Panenzvimbo Yakanaka',
                                                 style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],

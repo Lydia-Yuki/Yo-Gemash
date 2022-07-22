@@ -19,7 +19,8 @@ class _ObayetheNkosiYamiState extends State<ObayetheNkosiYami> {
         ),
       ),
       backgroundColor: Colors.white,
-      body: SafeArea(
+      body: SingleChildScrollView(
+        child: SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -51,6 +52,7 @@ class _ObayetheNkosiYamiState extends State<ObayetheNkosiYami> {
             ),
           ],
         ),
+      ),
       ),
     );
 
