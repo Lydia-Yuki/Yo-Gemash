@@ -44,57 +44,58 @@ class _EventsWidgetState extends State<EventsWidget> {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                width: double.infinity,
-                height: 70,
-                decoration: BoxDecoration(
-                  color: Theme.of(context).colorScheme.primary,
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 5,
-                      color: Color(0x27000000),
-                      offset: Offset(0, 3),
-                    )
-                  ],
-                ),
-                child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
-                  child: TextFormField(
-                    controller: textController,
-                    onChanged: (_) => EasyDebounce.debounce(
-                      'textController',
-                      Duration(milliseconds: 2000),
-                          () => setState(() {}),
-                    ),
-                    obscureText: false,
-                    decoration: InputDecoration(
-                      labelText: 'Search events...',
-                      labelStyle: Theme.of(context).textTheme.bodyText2,
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Color(0x00000000),
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      filled: true,
-                      fillColor:Colors.white54,
-                      prefixIcon: Icon(
-                        Icons.search_rounded,
-                        color: Colors.grey[800],
-                      ),
-                    ),
-                    style: Theme.of(context).textTheme.bodyText1,
-                  ),
-                ),
-              ),
+              // Container(
+              //   width: double.infinity,
+              //   height: 70,
+              //   decoration: BoxDecoration(
+              //     color: Theme.of(context).colorScheme.primary,
+              //     boxShadow: [
+              //       BoxShadow(
+              //         blurRadius: 5,
+              //         color: Color(0x27000000),
+              //         offset: Offset(0, 3),
+              //       )
+              //     ],
+              //   ),
+              //   child: Padding(
+              //     padding: EdgeInsetsDirectional.fromSTEB(16, 12, 16, 0),
+              //     child: TextFormField(
+              //       controller: textController,
+              //       onChanged: (_) => EasyDebounce.debounce(
+              //         'textController',
+              //         Duration(milliseconds: 2000),
+              //             () => setState(() {}),
+              //       ),
+              //       obscureText: false,
+              //       decoration: InputDecoration(
+              //         labelText: 'Search events...',
+              //         labelStyle: Theme.of(context).textTheme.bodyText2,
+              //         enabledBorder: OutlineInputBorder(
+              //           borderSide: BorderSide(
+              //             color: Color(0x00000000),
+              //             width: 1,
+              //           ),
+              //           borderRadius: BorderRadius.circular(12),
+              //         ),
+              //         focusedBorder: OutlineInputBorder(
+              //           borderSide: BorderSide(
+              //             color: Color(0x00000000),
+              //             width: 1,
+              //           ),
+              //           borderRadius: BorderRadius.circular(12),
+              //         ),
+              //         filled: true,
+              //         fillColor:Colors.white54,
+              //         prefixIcon: Icon(
+              //           Icons.search_rounded,
+              //           color: Colors.grey[800],
+              //         ),
+              //       ),
+              //       style: Theme.of(context).textTheme.bodyText1,
+              //     ),
+              //   ),
+              // ),
+              SizedBox(height: 10,),
               Padding(
                 padding: EdgeInsetsDirectional.fromSTEB(16, 4, 16, 0),
                 child: Row(
@@ -103,7 +104,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                   children: [
                     Text(
                       'See All',
-                      style: Theme.of(context).textTheme.bodyText1,
+                      style: Theme.of(context).textTheme.bodyText2,
                     ),
                   ],
                 ),
