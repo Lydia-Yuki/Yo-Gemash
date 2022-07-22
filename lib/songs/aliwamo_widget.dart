@@ -36,7 +36,7 @@ class _AliwamoWidgetState extends State<AliwamoWidget> {
         centerTitle: false,
         elevation: 2,
       ),
-      backgroundColor: Colors.white54,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),

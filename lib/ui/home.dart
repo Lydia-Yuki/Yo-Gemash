@@ -34,9 +34,9 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       drawer: Drawer(
         elevation: 16,
         child: InkWell(
-          onTap: () {
-            Navigator.push(context,
-                MaterialPageRoute(builder: (context) => NavBarPage(initialPage:'HomePage', title: 'Home'))
+          onTap: () async {
+            await Navigator.push(context,
+                MaterialPageRoute(builder: (context) => NavBarPage())
             );},
           child: ListView(
             padding: EdgeInsets.zero,

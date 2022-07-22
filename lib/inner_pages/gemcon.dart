@@ -31,7 +31,7 @@ class _GemconWidgetState extends State<GemconWidget> {
             await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => NavBarPage(initialPage: 'Events', title: 'Events'),
+                builder: (context) => NavBarPage(),
               ),
             );
           },

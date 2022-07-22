@@ -6,10 +6,7 @@ import 'package:yo_gemash/ui/home.dart';
 import 'package:yo_gemash/ui/hyms.dart';
 
 class NavBarPage extends StatefulWidget {
-  const NavBarPage({Key? key, required String initialPage, required this.title}) : super(key: key);
-
-  final String title;
-
+  const NavBarPage({Key? key}) : super(key: key);
   @override
   State<NavBarPage> createState() => _NavBarState();
 }
@@ -36,7 +33,7 @@ class _NavBarState extends State<NavBarPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Yo-Gemash'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
@@ -45,13 +42,17 @@ class _NavBarState extends State<NavBarPage> {
         type: BottomNavigationBarType.fixed,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-              icon: Icon(Icons.home)),
+              icon: Icon(Icons.home),
+          label: "Home"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.book)),
+              icon: Icon(Icons.book),
+              label: "Songs"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.calendar_today)),
+              icon: Icon(Icons.calendar_today),
+              label: "Events"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.download_for_offline_outlined))
+              icon: Icon(Icons.download_for_offline_outlined),
+              label: "PDFs")
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.blueAccent[700],

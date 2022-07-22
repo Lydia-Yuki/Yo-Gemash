@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
           bodyText1: TextStyle(fontSize: 14.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold),
           headline4: TextStyle(fontSize: 14.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.indigoAccent),
           headline5: TextStyle(fontSize: 14.0, fontFamily: 'Lexend Deca', fontWeight: FontWeight.normal),
-          subtitle1: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold),
+          subtitle1: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.black),
           subtitle2: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.indigoAccent)
         ),
       ),

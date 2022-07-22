@@ -31,7 +31,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
             await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => NavBarPage(initialPage: 'Events', title: 'Events'),
+                builder: (context) => NavBarPage(),
               ),
             );
           },
@@ -53,7 +53,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Image.asset(
-                  'assets/images/NYC.jpg',
+                  'assets/images/kwekwe.jpeg',
                   width: MediaQuery.of(context).size.width,
                   height: 230,
                   fit: BoxFit.cover,

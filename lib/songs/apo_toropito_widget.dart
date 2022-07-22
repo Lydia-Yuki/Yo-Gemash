@@ -36,7 +36,7 @@ class _ApoToropitoWidgetState extends State<ApoToropitoWidget> {
         centerTitle: false,
         elevation: 2,
       ),
-      backgroundColor: Colors.white54,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),

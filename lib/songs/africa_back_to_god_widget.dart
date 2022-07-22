@@ -24,7 +24,7 @@ class _AfricaBackToGodWidgetState extends State<AfricaBackToGodWidget> {
               child: Text(
                 'Verse 1\n Africa Back To God\nWe are singing\nAfrica Back To God\nWe are singing\n\nChorus 1\nWe are singing\nWe are\nbringing\nAfrica Back To God\n\nVerse 2\nZimbabwe Back To God\nWe are singing\nZimbabwe Back To God\nWe are singing\n\nChorus 1\nWe are singing\nWe are bringing\nZimbabwe Back To God',
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headline3,
+                style: Theme.of(context).textTheme.subtitle1,
               ),
             ),
           ],

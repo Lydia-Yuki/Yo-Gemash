@@ -36,7 +36,7 @@ class _BlessTheLordWidgetState extends State<BlessTheLordWidget> {
         centerTitle: false,
         elevation: 2,
       ),
-      backgroundColor: Colors.white54,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),

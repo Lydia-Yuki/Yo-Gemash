@@ -153,7 +153,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
-                                  'assets/images/WhatsApp_Image_2022-07-15_at_9.28.23_AM.jpeg',
+                                  'assets/images/pic(5).jpeg',
                                   width: double.infinity,
                                   height: 115,
                                   fit: BoxFit.cover,
@@ -213,7 +213,7 @@ class _EventsWidgetState extends State<EventsWidget> {
                               ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
                                 child: Image.asset(
-                                  'assets/images/NYC.jpg',
+                                  'assets/images/kwekwe.jpeg',
                                   width: double.infinity,
                                   height: 115,
                                   fit: BoxFit.cover,
