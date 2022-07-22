@@ -19,24 +19,26 @@ class _JehovhaUnaMasimbaState extends State<JehovhaUnaMasimba> {
         ),
       ),
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Align(
-            alignment: const AlignmentDirectional(0, 0.15),
-            child: Text(
-               'Zvose zvakasikwa nemwi,\nMuri ishe wavo vose,\nIvo vari pakudenga.\n\nJehovha '
-                   'muno ruzivo\nMunoziva zvose zvinhu;\nIsu vanhu hatizivi,\nIsu tose hatigoni.\n\nJehovha '
-                   'wakarurama.\nNaiyo mirau yake,\nIsu nyamba tapfuura\nTine mhosva mberi kwake.\n\nJehovha muri '
-                   'Mutswene,\nTakaipa mberi kwenyu;\nIsu ngatimukumbire\nRwose ruregero rwake.\n\nJehovha munadzo '
-                   'ngoni,\nWotibata nadzo tose,\nWakauya Mwana ,wenyu\nKuponesa vanhu vose.',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.subtitle1,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Align(
+              alignment: const AlignmentDirectional(0, 0.15),
+              child: Text(
+                 'Zvose zvakasikwa nemwi,\nMuri ishe wavo vose,\nIvo vari pakudenga.\n\nJehovha '
+                     'muno ruzivo\nMunoziva zvose zvinhu;\nIsu vanhu hatizivi,\nIsu tose hatigoni.\n\nJehovha '
+                     'wakarurama.\nNaiyo mirau yake,\nIsu nyamba tapfuura\nTine mhosva mberi kwake.\n\nJehovha muri '
+                     'Mutswene,\nTakaipa mberi kwenyu;\nIsu ngatimukumbire\nRwose ruregero rwake.\n\nJehovha munadzo '
+                     'ngoni,\nWotibata nadzo tose,\nWakauya Mwana ,wenyu\nKuponesa vanhu vose.',
+                textAlign: TextAlign.center,
+                style: Theme.of(context).textTheme.subtitle1,
+              ),
             ),
-          ),
-        ],
-      ),
+          ],
+        ),
+        ),
       ),
     );
     

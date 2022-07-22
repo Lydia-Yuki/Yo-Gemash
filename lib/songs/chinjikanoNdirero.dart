@@ -19,22 +19,24 @@ class _ChinjikanoNdireroState extends State<ChinjikanoNdirero> {
         ),
       ),
       backgroundColor: Colors.white,
-      body: SafeArea(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Align(
-              alignment: const AlignmentDirectional(0, 0.15),
-              child: Text(
-                'Ipapo ipapo Jesu ndichakudza\nKusvikira ikweyo\nNdichimurumbidza\n\nChinjikano ndirero\nTsime reupenyu\nRinopodza vose\nShe '
-                    'vanouya kwenyu\n\nChinjikano ipapo\nNdanga ndichihuta\nBva nenyasha ndipapo\nPandakazofara\n\nMaratidza '
-                    'ipapo\nTsitsi dzenyu huru\nZvino mundibetserei\nKuifunga kwazvo\n\nNdorambira ipapo\nNdichitenda '
-                    'kwoga\nPamwe handizivi po\nAsi apo poga',
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.subtitle1,
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Align(
+                alignment: const AlignmentDirectional(0, 0.15),
+                child: Text(
+                  'Ipapo ipapo Jesu ndichakudza\nKusvikira ikweyo\nNdichimurumbidza\n\nChinjikano ndirero\nTsime reupenyu\nRinopodza vose\nShe '
+                      'vanouya kwenyu\n\nChinjikano ipapo\nNdanga ndichihuta\nBva nenyasha ndipapo\nPandakazofara\n\nMaratidza '
+                      'ipapo\nTsitsi dzenyu huru\nZvino mundibetserei\nKuifunga kwazvo\n\nNdorambira ipapo\nNdichitenda '
+                      'kwoga\nPamwe handizivi po\nAsi apo poga',
+                  textAlign: TextAlign.center,
+                  style: Theme.of(context).textTheme.subtitle1,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
