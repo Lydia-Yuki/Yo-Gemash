@@ -1,20 +1,7 @@
-<<<<<<< HEAD
-=======
-import 'package:yo_gemash/songs/breakEveryChain.dart';
-import 'package:yo_gemash/songs/chinjikanoNdirero.dart';
-import 'package:yo_gemash/songs/chinyararaMoyoWangu.dart';
-import 'package:yo_gemash/songs/downTheValley.dart';
-import 'package:yo_gemash/songs/everydayWithJesus.dart';
-import 'package:yo_gemash/songs/igamaLeNkosi.dart';
-import 'package:yo_gemash/songs/jehovhaUnaMasimba.dart';
-import 'package:yo_gemash/songs/keTshepileWena.dart';
-import 'package:yo_gemash/songs/ngatimukudzeiMwari.dart';
-import 'package:yo_gemash/songs/obayetheNkosiYami.dart';
-import 'package:yo_gemash/songs/panenzvimboYakanaka.dart';
-import 'package:yo_gemash/songs/uthandoLukababa.dart';
-import 'package:yo_gemash/songs/uyaMweyaMutsvene.dart';
 
->>>>>>> 99a8a21c04fb9ac198de0bde12ec2ee3247555aa
+
+import 'package:flutter/material.dart';
+
 import '../songs/africa_back_to_god_widget.dart';
 import '../songs/agere_pachigaro_widget.dart';
 import '../songs/agnus_dei_widget.dart';
@@ -27,8 +14,9 @@ import '../songs/bless_the_lord_widget.dart';
 import '../songs/blessed_going_in_widget.dart';
 import '../songs/blessings_and_honour_widget.dart';
 import '../songs/bow_down_widget.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import '../songs/igamaLeNkosi.dart';
+import '../songs/keTshepileWena.dart';
+import '../songs/panenzvimboYakanaka.dart';
 
 class HymnsWidget extends StatefulWidget {
   const HymnsWidget({Key? key}) : super(key: key);
