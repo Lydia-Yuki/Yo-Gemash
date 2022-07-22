@@ -423,47 +423,48 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                         color: Colors.white54,
                                         borderRadius: BorderRadius.circular(12),
                                       ),
+                                      child: const Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            16, 8, 16, 0),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 12, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              const AfricaBackToGodWidget(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
                                       child: Padding(
                                         padding: const EdgeInsetsDirectional.fromSTEB(
-                                            16, 8, 16, 0),
-                                        child: InkWell(
-                                          onTap: () async {
-                                            await Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (context) =>
-                                                    const AfricaBackToGodWidget(),
-                                              ),
-                                            );
-                                          },
-                                          child: Container(
-                                            width: double.infinity,
-                                            decoration: BoxDecoration(
-                                              color: Colors.white54,
-                                              borderRadius:
-                                              BorderRadius.circular(12),
-                                            ),
-                                            child: Padding(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
                                               padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(8, 8, 12, 8),
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.max,
-                                                crossAxisAlignment:
-                                                CrossAxisAlignment.center,
-                                                children: [
-                                                  Padding(
-                                                    padding:
-                                                    const EdgeInsetsDirectional
-                                                        .fromSTEB(
-                                                        16, 0, 0, 0),
-                                                    child: Text(
-                                                      'Africa Back To God',
-                                                      style:Theme.of(context).textTheme.subtitle1,),
-                                                  ),
-                                                ],
-                                              ),
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Africa Back to God',
+                                                style:Theme.of(context).textTheme.subtitle1,),
                                             ),
-                                          ),
+                                          ],
                                         ),
                                       ),
                                     ),
