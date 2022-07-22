@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:yo_gemash/ui/menu.dart';
 
 import '../nav_bar.dart';
+import 'about.dart';
+import 'downloads.dart';
+import 'events.dart';
+import 'hyms.dart';
 
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key? key, required String title}) : super(key: key);
@@ -12,141 +17,129 @@ class HomePageWidget extends StatefulWidget {
 }
 
 class _HomePageWidgetState extends State<HomePageWidget> {
-  PageController? pageViewController;
+
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  int _selectedIndex = 0;
+  static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static const List<Widget> _widgetOptions = <Widget>[
+    MyWidget(title: "Home"),
+    HymnsWidget(),
+    EventsWidget(),
+    DownloadsWidget()
+  ];
+
+  void _onItemTapped(int index){
+    setState((){
+      _selectedIndex = index;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent[700],
-        automaticallyImplyLeading: false,
-        title: Text(
-          'Home',
-          style: (Theme.of(context).textTheme.headline2),
-        ),
-        actions: const [],
-        centerTitle: false,
-        elevation: 2,
-      ),
       backgroundColor: Colors.white,
       drawer: Drawer(
-        elevation: 16,
-        child: InkWell(
-          onTap: () async {
-            await Navigator.push(context,
-                MaterialPageRoute(builder: (context) => NavBarPage())
-            );},
-          child: ListView(
-            padding: EdgeInsets.zero,
-            scrollDirection: Axis.vertical,
-            children: const [],
+  // Add a ListView to the drawer. This ensures the user can scroll
+  // through the options in the drawer if there isn't enough vertical
+  // space to fit everything.
+  child: ListView(
+    // Important: Remove any padding from the ListView.
+    padding: EdgeInsets.zero,
+    children: [
+      const DrawerHeader(
+        decoration: BoxDecoration(
+          color: Color(0xFF2962FF),
+        ),
+        child: Text('Yo-Gemash',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
           ),
         ),
+        
       ),
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).unfocus(),
-          child: Column(
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Align(
-                alignment: const AlignmentDirectional(0, 0),
-                child: Container(
-                  width: 120,
-                  height: 120,
-                  clipBehavior: Clip.antiAlias,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                  ),
-                  child: Image.asset(
-                    'assets/images/logo.png',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Text(
-                'Welcome to\nYo-Gemash',
-                textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.headline3,
-              ),
-              Expanded(
-                child: SizedBox(
-                  width: double.infinity,
-                  height: 500,
-                  child: Stack(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 50),
-                        child: PageView(
-                          controller: pageViewController ??=
-                              PageController(initialPage: 0),
-                          scrollDirection: Axis.horizontal,
-                          children: [
-                            Image.asset(
-                              'assets/images/imagine.jpeg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                            Image.asset(
-                              'assets/images/pic(4).jpeg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                            Image.asset(
-                              'assets/images/reg.jpeg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                            Image.asset(
-                              'assets/images/pic(5).jpeg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
-                          ],
-                        ),
-                      ),
-                      Align(
-                        alignment: const AlignmentDirectional(0, 1),
-                        child: Padding(
-                          padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
-                          child: SmoothPageIndicator(
-                            controller: pageViewController ??=
-                                PageController(initialPage: 0),
-                            count: 4,
-                            axisDirection: Axis.horizontal,
-                            onDotClicked: (i) {
-                              pageViewController!.animateToPage(
-                                i,
-                                duration: const Duration(milliseconds: 500),
-                                curve: Curves.ease,
-                              );
-                            },
-                            effect: const ExpandingDotsEffect(
-                              expansionFactor: 2,
-                              spacing: 8,
-                              radius: 16,
-                              dotWidth: 16,
-                              dotHeight: 16,
-                              dotColor: Color(0xFF9E9E9E),
-                              activeDotColor: Color(0xFF3F51B5),
-                              paintStyle: PaintingStyle.fill,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+      ListTile(
+        title: const Text('Home'),
+        onTap: () {
+          Navigator.pop(context);
+        },
+      ),
+      const Divider(),
+      ListTile(
+        title: const Text('Hymns and Songs'),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => HymnsWidget()),
+          );
+        },
+      ),
+      const Divider(),
+      ListTile(
+        title: const Text('Events'),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => EventsWidget()),
+          );
+        },
+      ),
+      const Divider(),
+      ListTile(
+        title: const Text('Downloads'),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => DownloadsWidget()),
+          );
+        },
+      ),
+      const Divider(),
+      ListTile(
+        title: const Text('About'),
+        onTap: () {
+          Navigator.pop(context);
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const About()),
+          );
+        },
+      ),
+      const Divider(),
+    ],
+  ),
+      
+),
+      body: Center(
+        child: _widgetOptions.elementAt(_selectedIndex),
+      ),
+
+      bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+          label: "Home"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.book),
+              label: "Songs"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.calendar_today),
+              label: "Events"),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.download_for_offline_outlined),
+              label: "PDFs")
+        ],
+        currentIndex: _selectedIndex,
+        selectedItemColor: Colors.blueAccent[700],
+        unselectedItemColor: Colors.black,
+        onTap: _onItemTapped,
       ),
     );
   }

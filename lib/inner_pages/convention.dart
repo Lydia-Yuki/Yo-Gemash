@@ -22,7 +22,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
         backgroundColor: Theme.of(context).colorScheme.primary,
         automaticallyImplyLeading: false,
         leading: IconButton(
-          icon: Icon(
+          icon: const Icon(
             Icons.arrow_back_rounded,
             color: Colors.white,
             size: 30,
@@ -31,7 +31,7 @@ class _ConventionWidgetState extends State<ConventionWidget> {
             await Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => NavBarPage(),
+                builder: (context) => const NavBarPage(),
               ),
             );
           },
