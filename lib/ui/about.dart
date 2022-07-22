@@ -61,7 +61,7 @@ class _AboutState extends State<About> {
                                 subtitle: Text('1.0.0'),
                               ),
                               ListTile(
-                                leading: Icon(Icons.info),
+                                leading: Icon(Icons.web),
                                 title: Text('Github'),
                                 subtitle: Text('https://github.com/Lydia-Yuki/Yo-Gemash'),
                               )

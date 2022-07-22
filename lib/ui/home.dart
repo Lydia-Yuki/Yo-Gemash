@@ -50,15 +50,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     children: [
       const DrawerHeader(
         decoration: BoxDecoration(
-          color: Color(0xFF2962FF),
+          color: Colors.white,
         ),
-        child: Text('Yo-Gemash',
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
+        child: Image(image: AssetImage('assets/images/logo.png')
+        ,)
+        ,
+        // Text('Yo-Gemash',
+        //   style: TextStyle(
+        //     color: Colors.white,
+        //     fontSize: 24,
+        //     fontWeight: FontWeight.bold,
+        //   ),
+        // ),
         
       ),
       ListTile(
