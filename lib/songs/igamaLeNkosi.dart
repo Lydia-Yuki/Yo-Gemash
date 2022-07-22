@@ -19,7 +19,9 @@ class _IgamaleNkosiState extends State<IgamaleNkosi> {
         ),
       ),
       backgroundColor: Colors.white,
-      body: SafeArea(
+      body:
+      SingleChildScrollView(
+        child:SafeArea(
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -38,6 +40,7 @@ class _IgamaleNkosiState extends State<IgamaleNkosi> {
             ),
           ],
         ),
+      ),
       ),
     );
 
