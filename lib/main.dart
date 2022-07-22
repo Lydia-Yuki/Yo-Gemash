@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:yo_gemash/ui/home.dart';
 import 'package:yo_gemash/ui/hyms.dart';
 
-void main() {
+Future<void> main() async {
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
   runApp(MyApp());
 }
 
