@@ -24,7 +24,16 @@ class _MyWidgetState extends State<MyWidget> {
         actions: const [],
         centerTitle: false,
         elevation: 2,
-      ),
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.white,
+            size: 30,
+          ),
+          onPressed:  () => Scaffold.of(context).openDrawer(),
+        ),
+        ),
+      
       body: SafeArea(
         child: GestureDetector(
           onTap: () => FocusScope.of(context).unfocus(),

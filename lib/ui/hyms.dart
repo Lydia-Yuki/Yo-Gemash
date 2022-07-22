@@ -59,6 +59,14 @@ class _HymnsWidgetState extends State<HymnsWidget> {
         actions: [],
         centerTitle: false,
         elevation: 2,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.white,
+            size: 30,
+          ),
+          onPressed:  () => Scaffold.of(context).openDrawer(),
+        ),
       ),
       backgroundColor: Colors.white,
       body: GestureDetector(

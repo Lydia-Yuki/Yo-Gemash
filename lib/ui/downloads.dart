@@ -25,6 +25,14 @@ class _DownloadsWidgetState extends State<DownloadsWidget> {
         actions: [],
         centerTitle: false,
         elevation: 2,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.white,
+            size: 30,
+          ),
+          onPressed:  () => Scaffold.of(context).openDrawer(),
+        ),
       ),
       backgroundColor: Colors.white54,
       body: SafeArea(

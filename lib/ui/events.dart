@@ -35,6 +35,14 @@ class _EventsWidgetState extends State<EventsWidget> {
         actions: [],
         centerTitle: false,
         elevation: 0,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.menu,
+            color: Colors.white,
+            size: 30,
+          ),
+          onPressed:  () => Scaffold.of(context).openDrawer(),
+        ),
       ),
       backgroundColor: Colors.white,
       body: GestureDetector(
