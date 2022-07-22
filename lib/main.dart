@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:yo_gemash/ui/home.dart';
-import 'package:yo_gemash/ui/hyms.dart';
+import 'package:yo_gemash/ui/splash.dart';
 
 Future<void> main() async {
   // await Firebase.initializeApp(
@@ -34,8 +33,9 @@ class MyApp extends StatelessWidget {
           subtitle2: TextStyle(fontSize: 18.0, fontFamily: 'Poppins', fontWeight: FontWeight.bold, color: Colors.indigoAccent)
         ),
       ),
-      //home: const HymnsWidget(),
-      home: const HomePageWidget(title: 'Yo-Gemash'),
+      home: const SplashPage(),
+      //home: const HomePageWidget(title: 'Yo-Gemash'),
     );
   }
 }
+
