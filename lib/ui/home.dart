@@ -63,6 +63,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       ),
       ListTile(
         title: const Text('Home'),
+        leading: const Icon(Icons.home),
         onTap: () {
           Navigator.pop(context);
         },
@@ -70,6 +71,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       const Divider(),
       ListTile(
         title: const Text('Hymns and Songs'),
+        leading: const Icon(Icons.book),
         onTap: () {
           Navigator.pop(context);
           Navigator.push(
@@ -81,6 +83,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       const Divider(),
       ListTile(
         title: const Text('Events'),
+        leading: const Icon(Icons.calendar_today),
         onTap: () {
           Navigator.pop(context);
           Navigator.push(
@@ -92,6 +95,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       const Divider(),
       ListTile(
         title: const Text('Downloads'),
+        leading: const Icon(Icons.download_for_offline_outlined),
         onTap: () {
           Navigator.pop(context);
           Navigator.push(
@@ -103,6 +107,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       const Divider(),
       ListTile(
         title: const Text('About'),
+        leading: const Icon(Icons.info),
         onTap: () {
           Navigator.pop(context);
           Navigator.push(
