@@ -2,7 +2,11 @@ import 'package:yo_gemash/songs/breakEveryChain.dart';
 import 'package:yo_gemash/songs/chinjikanoNdirero.dart';
 import 'package:yo_gemash/songs/chinyararaMoyoWangu.dart';
 import 'package:yo_gemash/songs/downTheValley.dart';
+import 'package:yo_gemash/songs/everyKneeShallBow.dart';
 import 'package:yo_gemash/songs/everydayWithJesus.dart';
+import 'package:yo_gemash/songs/giveUsCleanHands.dart';
+import 'package:yo_gemash/songs/hakunaHamaKupindaJesu.dart';
+import 'package:yo_gemash/songs/hakunaZitaSeraJesu.dart';
 import 'package:yo_gemash/songs/igamaLeNkosi.dart';
 import 'package:yo_gemash/songs/jehovhaUnaMasimba.dart';
 import 'package:yo_gemash/songs/keTshepileWena.dart';
@@ -10,6 +14,7 @@ import 'package:yo_gemash/songs/ngatimukudzeiMwari.dart';
 import 'package:yo_gemash/songs/obayetheNkosiYami.dart';
 import 'package:yo_gemash/songs/panenzvimboYakanaka.dart';
 import 'package:yo_gemash/songs/thathakonjengiloJesuWidget.dart';
+import 'package:yo_gemash/songs/ujesuWamUyapila.dart';
 import 'package:yo_gemash/songs/uthandoLukababa.dart';
 import 'package:yo_gemash/songs/uyaMweyaMutsvene.dart';
 import '../songs/africa_back_to_god_widget.dart';
@@ -26,6 +31,9 @@ import '../songs/blessings_and_honour_widget.dart';
 import '../songs/bow_down_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import '../songs/fatherWeWorshipYou.dart';
+import '../songs/hakunaWakaitaSaJesu.dart';
 
 class HymnsWidget extends StatefulWidget {
   const HymnsWidget({Key? key}) : super(key: key);
@@ -353,6 +361,126 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Chinyarara Mwoyo Wangu',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const HakunaHamaKupindaJesu(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Hakuna Hama Kupinda Jesu',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const HakunaWakaitaSaJesu(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Hakuna Wakaita saJesu',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const HakunaZitaSeraJesu(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Hakuna Zita seraJesu',
                                                 style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],
@@ -994,6 +1122,126 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                     ),
                                   ),
                                 ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const EveryKnee(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Every Knee Shall Bow',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const Father(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Father We Worship You',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 8, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                          const CleanHands(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Give Us Clean Hands',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
@@ -1232,6 +1480,45 @@ class _HymnsWidgetState extends State<HymnsWidget> {
                                                   .fromSTEB(16, 0, 0, 0),
                                               child: Text(
                                                 'Uthando Lukababa',
+                                                style:Theme.of(context).textTheme.subtitle1,),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      16, 12, 16, 0),
+                                  child: InkWell(
+                                    onTap: () async {
+                                      await Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => const UjesuWamUyapila(),
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      decoration: BoxDecoration(
+                                        color: Colors.white54,
+                                        borderRadius: BorderRadius.circular(12),
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                            8, 8, 12, 8),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(16, 0, 0, 0),
+                                              child: Text(
+                                                'Ujesu Wam\' Uyapila',
                                                 style:Theme.of(context).textTheme.subtitle1,),
                                             ),
                                           ],

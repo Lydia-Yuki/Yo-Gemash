@@ -92,12 +92,6 @@ class _MyWidgetState extends State<MyWidget> {
                               height: 100,
                               fit: BoxFit.cover,
                             ),
-                            Image.asset(
-                              'assets/images/pic(5).jpeg',
-                              width: 100,
-                              height: 100,
-                              fit: BoxFit.cover,
-                            ),
                           ],
                         ),
                       ),
@@ -108,7 +102,7 @@ class _MyWidgetState extends State<MyWidget> {
                           child: SmoothPageIndicator(
                             controller: pageViewController ??=
                                 PageController(initialPage: 0),
-                            count: 4,
+                            count: 3,
                             axisDirection: Axis.horizontal,
                             onDotClicked: (i) {
                               pageViewController!.animateToPage(

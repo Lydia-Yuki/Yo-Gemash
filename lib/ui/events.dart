@@ -134,66 +134,6 @@ class _EventsWidgetState extends State<EventsWidget> {
                         await Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => GemconWidget(),
-                          ),
-                        );
-                      },
-                      child: Container(
-                        width: MediaQuery.of(context).size.width * 0.45,
-                        height: 190,
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              blurRadius: 4,
-                              color: Color(0x230E151B),
-                              offset: Offset(0, 2),
-                            )
-                          ],
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(4, 4, 4, 4),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(10),
-                                child: Image.asset(
-                                  'assets/images/pic(5).jpeg',
-                                  width: double.infinity,
-                                  height: 115,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                EdgeInsetsDirectional.fromSTEB(8, 12, 0, 0),
-                                child: Text(
-                                  'GEMCon',
-                                  style: Theme.of(context).textTheme.subtitle1,
-                                ),
-                              ),
-                              Padding(
-                                padding:
-                                EdgeInsetsDirectional.fromSTEB(8, 4, 0, 0),
-                                child: Text(
-                                  'Mini Convention',
-                                  style: Theme.of(context).textTheme.bodyText2,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      onTap: () async {
-                        await Navigator.push(
-                          context,
-                          MaterialPageRoute(
                             builder: (context) => ConventionWidget(),
                           ),
                         );
